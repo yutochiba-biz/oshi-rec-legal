@@ -1,1 +1,1 @@
-# oshi-rec-legal
+# oshirec-web
