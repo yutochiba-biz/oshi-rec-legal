@@ -70,7 +70,7 @@
   <div class="container">
     <a href="index.html" class="back">&larr; トップに戻る</a>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">最終更新日: 2026年3月20日</p>
+    <p class="meta">最終更新日: 2026年6月23日</p>
 
     <div class="section">
       <h2>1. はじめに</h2>
@@ -87,24 +87,41 @@
         <li><strong>メールアドレス</strong>: アカウント登録・ログインに使用します</li>
         <li><strong>Apple Sign In情報</strong>: Apple IDによる認証に使用します（Apple社から提供される識別子・メールアドレス）</li>
         <li><strong>推し活データ</strong>: 推し情報（名前・カラー・カテゴリ等）、貢ぎ記録（金額・カテゴリ・写真等）、推し活ログ（テキスト・画像等）、コレクション情報、イベント情報</li>
-        <li><strong>グループ情報</strong>: グループ名、グループ内で共有されるタイムライン・統計データ</li>
+        <li><strong>コミュニティ情報</strong>: コミュニティ名、コミュニティ内で共有されるタイムライン・まとめ（統計）データ、コネクトでリンクした推しの情報</li>
+        <li><strong>プロフィール情報</strong>: ニックネーム・アイコン画像（コミュニティ内で他のユーザーに表示されます）</li>
+        <li><strong>通報・ブロック情報</strong>: ユーザーが行った通報の内容（対象・理由・任意の詳細）およびブロックの関係。これらは安全なコミュニティ運営のために収集します</li>
+        <li><strong>規約同意の記録</strong>: 利用規約・プライバシーポリシーへの同意日時およびバージョン</li>
       </ul>
 
       <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">2.2 自動的に収集する情報</h3>
       <ul>
         <li><strong>デバイス情報</strong>: デバイスの種類、OSバージョン、アプリバージョン</li>
         <li><strong>利用状況データ</strong>: アプリの使用状況に関する匿名化された分析データ</li>
-        <li><strong>広告識別子</strong>: 広告表示の最適化のために使用します（Free版のみ）</li>
+        <li><strong>広告識別子</strong>: 広告表示の最適化のために使用します（Free版のみ）。パーソナライズド広告のための識別子の利用にあたっては、iOSのトラッキング許可（App Tracking Transparency）ダイアログを通じてユーザーの同意を取得します</li>
       </ul>
     </div>
 
     <div class="section">
-      <h2>3. 情報の利用目的</h2>
+      <h2>3. コミュニティ内で他のユーザーに表示される情報</h2>
+      <p>本アプリのコミュニティ機能を利用する場合、以下の情報が同じコミュニティ・コネクトに参加する他のユーザーに表示されます。</p>
+      <ul>
+        <li>ニックネーム・アイコン画像</li>
+        <li>公開範囲（visibility）を「コミュニティ」に設定して投稿した推し活ログ</li>
+        <li>コネクトにリンクした推しの名前（リンクは共有への同意とみなします）</li>
+        <li>コミュニティ全体・コネクト単位の合計貢ぎ額（個人別の金額は他のユーザーに開示されません）</li>
+      </ul>
+      <p>メールアドレス等の連絡先情報は、他のユーザーに表示されません。</p>
+    </div>
+
+    <div class="section">
+      <h2>4. 情報の利用目的</h2>
       <p>収集した情報は、以下の目的で利用します。</p>
       <ul>
         <li>アカウントの作成・認証・管理</li>
         <li>本アプリの機能提供（推し活データの保存・表示・集計）</li>
-        <li>グループ機能におけるデータ共有</li>
+        <li>コミュニティ機能におけるデータ共有</li>
+        <li>通報対応・不適切なコンテンツの非表示／削除等、安全なコミュニティ運営</li>
+        <li>利用規約・プライバシーポリシーへの同意状況の管理</li>
         <li>サブスクリプション（有料プラン）の管理</li>
         <li>広告の表示（Free版のみ）</li>
         <li>アプリの改善・不具合修正</li>
@@ -113,65 +130,70 @@
     </div>
 
     <div class="section">
-      <h2>4. 第三者へのデータ提供</h2>
+      <h2>5. 第三者へのデータ提供</h2>
       <p>本アプリでは、サービス提供のために以下の第三者サービスを利用しています。各サービスに対して、必要最小限のデータを送信します。</p>
 
-      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">4.1 Supabase</h3>
+      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">5.1 Supabase</h3>
       <p>認証情報およびアプリデータの保管に使用します。データはSupabase社のサーバー（東京リージョン）に保存されます。</p>
       <ul>
         <li>Supabaseプライバシーポリシー: <a href="https://supabase.com/privacy" style="color: #6B6560;">https://supabase.com/privacy</a></li>
       </ul>
 
-      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">4.2 RevenueCat</h3>
+      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">5.2 RevenueCat</h3>
       <p>サブスクリプション（有料プラン）の管理に使用します。購入情報・ユーザー識別子を送信します。</p>
       <ul>
         <li>RevenueCatプライバシーポリシー: <a href="https://www.revenuecat.com/privacy/" style="color: #6B6560;">https://www.revenuecat.com/privacy/</a></li>
       </ul>
 
-      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">4.3 Google AdMob</h3>
+      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">5.3 Google AdMob</h3>
       <p>Free版における広告表示に使用します。広告識別子・デバイス情報を送信します。</p>
       <ul>
         <li>Googleプライバシーポリシー: <a href="https://policies.google.com/privacy" style="color: #6B6560;">https://policies.google.com/privacy</a></li>
       </ul>
 
-      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">4.4 Expo</h3>
+      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">5.4 Expo</h3>
       <p>プッシュ通知の送信に使用します。デバイストークンを送信します。</p>
       <ul>
         <li>Expoプライバシーポリシー: <a href="https://expo.dev/privacy" style="color: #6B6560;">https://expo.dev/privacy</a></li>
       </ul>
 
       <p style="margin-top: 16px;">上記以外の第三者に対して、法令に基づく場合を除き、ユーザーの同意なく個人情報を提供することはありません。</p>
+
+      <h3 style="font-size: 1rem; font-weight: 600; margin: 16px 0 8px;">5.5 国外への移転について</h3>
+      <p>これらの第三者サービスの一部は、日本国外（米国等）にサーバーを設置し、または日本国外で個人情報を取り扱う場合があります。ユーザーは、本アプリの利用にあたり、これらのサービスを通じて個人情報が国外に移転されることに同意するものとします。各サービスにおける個人情報の保護措置については、上記各社のプライバシーポリシーをご参照ください。</p>
     </div>
 
     <div class="section">
-      <h2>5. データの保管</h2>
+      <h2>6. データの保管</h2>
       <p>ユーザーのデータは、Supabase社が提供するクラウドサーバー（東京リージョン）に保管されます。データの送受信はSSL/TLS暗号化により保護されています。</p>
     </div>
 
     <div class="section">
-      <h2>6. データの削除</h2>
+      <h2>7. データの削除</h2>
       <p>ユーザーは、アプリ内の「設定」画面からアカウントを削除することができます。アカウント削除時には、以下のデータがすべて削除されます。</p>
       <ul>
         <li>アカウント情報（メールアドレス・認証情報）</li>
         <li>推し活データ（推し情報・貢ぎ記録・ログ・コレクション・イベント）</li>
         <li>アップロードされた画像・写真</li>
-        <li>グループメンバーシップ（グループ自体は残りますが、ユーザーのデータは削除されます）</li>
+        <li>コミュニティメンバーシップ（コミュニティ自体は残りますが、ユーザーのデータは削除されます）</li>
+        <li>ユーザーが行った通報・ブロックの記録</li>
       </ul>
       <p>削除されたデータの復元はできません。削除処理は、リクエストから30日以内に完了します。</p>
+      <p>※ 推しを「降りる」操作は、データを残したまま当該の推しを非表示にするものであり、アカウント削除とは異なります。</p>
     </div>
 
     <div class="section">
-      <h2>7. 子どものプライバシー</h2>
+      <h2>8. 子どものプライバシー</h2>
       <p>本アプリは、13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
     </div>
 
     <div class="section">
-      <h2>8. プライバシーポリシーの変更</h2>
+      <h2>9. プライバシーポリシーの変更</h2>
       <p>本ポリシーは、必要に応じて変更されることがあります。重要な変更がある場合は、アプリ内通知またはその他の適切な方法でお知らせします。変更後も本アプリを継続してご利用いただいた場合、変更後のポリシーに同意いただいたものとみなします。</p>
     </div>
 
     <div class="section">
-      <h2>9. お問い合わせ</h2>
+      <h2>10. お問い合わせ</h2>
       <p>本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
       <p style="margin-top: 8px;"><strong>メール:</strong> <a href="mailto:support@oshirec.app" style="color: #6B6560;">support@oshirec.app</a></p>
     </div>
